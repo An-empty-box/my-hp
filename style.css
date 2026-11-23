@@ -1,44 +1,57 @@
+/* ページ全体の基本設定 */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0f172a;
-    color: #f8fafc;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    /* 文字のフォント指定 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #0f172a; /* 背景色(濃い紺色) */
+    color: #f8fafc; /* 文字色(白に近いグレー) */
+    margin: 0;        /* 画面端の余計な外側の余白をゼロにする */
+    padding: 0;       /* 内側の余白もゼロにする */
+    line-height: 1.6; /* 行間を少し広めにとって読みやすくする */
 }
 
+/* ヘッダー（タイトル部分）のデザイン */
 header {
+    /* 斜め方向のグラデーション背景 */
     background: linear-gradient(135deg, #1e293b, #334155);
-    text-align: center;
-    padding: 3rem 1rem;
-    border-bottom: 1px solid #334155;
+    text-align: center;  /* 文字を中央揃え */
+    padding: 3rem 1rem;  /* 上下に3文字分、左右に１文字分の内側余白 */
+    border-bottom: 1px solid #334155; /*下端に細い線を引く */
 }
 
+/* ヘッダー内のh1タグのデザイン */
 header h1 {
     margin: 0;
-    fint-size: 2.2rem;
-    color: #38bdf8;
+    fint-size: 2.2rem; /* 文字サイズを標準の2.2倍に */
+    color: #38bdf8;  /* 鮮やかな水色 */
 }
 
+/* メインエリアの幅制限と中央配置 */
 main {
+    /* 横幅が800px以上広がらないように制限（PCで見たときに見やすい幅）*/
     max-width: 800px;
+    /* 上下に2文字分の余白、左右はautoにして画面中央に配置 */
     margin: 2rem auto;
+    /* スマホ画面で端にくっつかないような左右に少し余白 */
     padding: 0 1rem;
 }
 
+/* HTMLでclass="card"をつけた箱のデザイン */
 .card {
     background-color: #1e294b;
-    border-radius: 12px;
+    border-radius: 12px; /* 角を12px分丸くする */
     padding: 1.5rem 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.5rem; /* カード同士の縦の間隔 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* 影をつけて浮かび上がらせる */
 }
 
+/* 見出し(h2)の下線 */
 h2 {
     border-bottom: 2rem solid #38bdf8;
     padding-bottom: 0.5rem;
     margin-top: 0;
 }
 
+/* ゲーム枠のデザイン */
 .game-box {
     background-color: #0f172a;
     padding: 1.5rem;
@@ -46,6 +59,7 @@ h2 {
     text-align: center;
 }
 
+/* 数字入力欄のデザイン */
 input[type="number"] {
     padding: 0.6rem;
     font-size: 1rem;
@@ -55,6 +69,7 @@ input[type="number"] {
     text-align: center;
 }
 
+/* ボタン共通のデザイン */
 button {
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
@@ -62,27 +77,31 @@ button {
     border-radius: 6px;
     background-color: #38bdf8;
     color: #0f172a;
-    font-weight: bold;
-    cursor: pointer;
+    font-weight: bold; /* 太字 */
+    cursor: pointer;   /* マウスを乗せた時に指のマークにする */
     margin-left: 0.5rem;
 }
 
+/* ボタンにマウスカーソルが乗った(hover)の時の色変化 */
 button:hover {
     background-color: #7dd3fc;
 }
 
+/* リセットボタン用の色上書き */
 .sub-btn {
     background-color: #475569;
     color: #f8fafc;
 }
 
+/* 結果メッセージの文字デザイン */
 .message {
     margin-top: 1rem;
     font-weight: bold;
     font-size: 1.1rem;
-    color: #fbbf24;
+    color: #fbbf24; /* 目立つ黄色 */
 }
 
+/* フッター（一番下）のデザイン */
 footer {
     text-align: center;
     padding: 2rem;

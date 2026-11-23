@@ -24,9 +24,17 @@
                 <div class="game-box">
                     <h3>🎯数あてゲーム(1~100)</h3>
                     <p>コンピューターが選んだ数字を当ててください！</p>
+                    
+                    <!-- 数字の入力欄。JavaScriptから中身を取り出すために id="guessInput"という名札をつけている -->
                     <input type="number" id="guessInput" min="1" max="100" placeholder="1~100">
+                    
+                    <!-- クリックされた瞬間(onclick)に、Javascriptの checkGuess() 関数を呼び出す -->
                     <button onclick="checkGuess()">判定する</button>
+                    
+                    <!-- クリックされた瞬間に resetGame() 関数を呼び出す -->
                     <button onclick="resetGame()" class="sub-btn">リセット</button>
+                    
+                    <!-- ゲーム結果のメッセージを表示する場所。id="resultMessage"でJavaScriptから文字を置き換える -->
                     <p id="resultMessage" class="message">数字を入力して「判定する」を押してね</p>
                 </div>
             </section>
