@@ -2,11 +2,40 @@
 <html lang="jp">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>なにもない箱</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>なにもない箱</h1>
-        <p>初学者です。とりあえずGitからHPを公開する練習してます</p>
-        <p>このなにもない箱にちょっとずつモノを入れてゆこうと思っています</p>
+        <header>
+            <h1>なにもない箱</h1>
+            <p>初学者です。とりあえずGitからHPを公開する練習してます</p>
+            <p>このなにもない箱にちょっとずつモノを入れてゆこうと思っています</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>いまのわたし</h2>
+                <p>プログラミングの学習のアウトプットのためにこのページを書いています</p>
+            </section>
+
+            <section class="card">
+                <h2>Works (ミニゲーム)</h2>
+                <div class="game-box">
+                    <h3>🎯数あてゲーム(1~100)</h3>
+                    <p>コンピューターが選んだ数字を当ててください！</p>
+                    <input type="number" id="guessInput" min="1" max="100" placeholder="1~100">
+                    <button onclick="checkGuess()">判定する</button>
+                    <button onclick="resetGame()" class="sub-btn">リセット</button>
+                    <p id="resultMessage" class="message">数字を入力して「判定する」を押してね</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 なにもない箱</p>
+        </footer>
+
+        <script src="game.js"></script>
     </body>
 </html>
